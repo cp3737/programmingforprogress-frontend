@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  '6.0'
+install: npm install
+deploy: 
+  provider: s3
+  access_key_id: "${AWS_ACCESS_KEY}"
+  secret_access_key: "${AWS_SECRET_KEY}"
+  bucket: "mollinger-programming-first"
+  region: us-west-2
+
+
+  
